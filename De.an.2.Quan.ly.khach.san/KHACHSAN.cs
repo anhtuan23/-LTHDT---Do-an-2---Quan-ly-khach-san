@@ -256,14 +256,22 @@ namespace Do_an___Quan_ly_khach_san
         }
         public void lietKePhongGiaGiamDan()
         {
-            string kq = "Danh sach cac phong theo thu tu gia giam dan:\n";
-            List<PHONG> lPhong = new List<PHONG>();
-            foreach (PHONG p in dsPhong)
+            for (int i =0;i<this.dsPhong.Count;i++)
             {
-                lPhong.Add(p);
-            }
-            List<PHONG> daXep = lPhong.OrderBy(a => -a.DonGia).ToList();
-            foreach (PHONG p in daXep)
+                for (int j =i+1;j<this.dsPhong.Count;j++)
+                {
+                    PHONG b = (PHONG)this.dsPhong[j];
+                    PHONG a = (PHONG)this.dsPhong[i];
+                    if (a.DonGia<b.DonGia)
+                    {
+                        PHONG dummy = (PHONG)this.dsPhong[i];
+                        this.dsPhong[i] = dsPhong[j];
+                        this.dsPhong[j] = dummy;
+                    }
+                }
+            }       
+            string kq = "Danh sach cac phong theo thu tu gia giam dan:\n";
+            foreach (PHONG p in this.dsPhong)
             {
                 kq += p.xuatPhong() + "\n";
             }
