@@ -122,16 +122,16 @@ namespace Do_an___Quan_ly_khach_san
                             Console.WriteLine(string.Format("So tien phai tra cua khach hang {0} la {1} D", dkCmnd15, thanhTien));
                         }
                         break;
-                    case 16://Save
-                        string duongDanPhong = "C:\\Users\\anh\\Google Drive\\Learning\\05.Phương pháp lập trình hướng đối tượng\\Projects\\Chuong 1\\phong.txt";
-                        string duongDanKhach = "C:\\Users\\anh\\Google Drive\\Learning\\05.Phương pháp lập trình hướng đối tượng\\Projects\\Chuong 1\\khach thue.txt";
+                    case 16://Save 
+                        string duongDanPhong = "C:\\Users\\anh\\Google Drive\\Learning\\ĐH Khoa học Tự nhiên\\05.Phương pháp lập trình hướng đối tượng\\phong.txt";
+                        string duongDanKhach = "C:\\Users\\anh\\Google Drive\\Learning\\ĐH Khoa học Tự nhiên\\05.Phương pháp lập trình hướng đối tượng\\khach thue.txt";
                         ks.luuDanhSachPhong(duongDanPhong);
                         ks.luuDanhSachKhachThue(duongDanKhach);
                         Console.WriteLine("Da luu");
                         break;
                     case 17://Load
-                        string duongDanPhong14 = "C:\\Users\\anh\\Google Drive\\Learning\\05.Phương pháp lập trình hướng đối tượng\\Projects\\Chuong 1\\phong.txt";
-                        string duongDanKhach14 = "C:\\Users\\anh\\Google Drive\\Learning\\05.Phương pháp lập trình hướng đối tượng\\Projects\\Chuong 1\\khach thue.txt";
+                        string duongDanPhong14 = "C:\\Users\\anh\\Google Drive\\Learning\\ĐH Khoa học Tự nhiên\\05.Phương pháp lập trình hướng đối tượng\\phong.txt";
+                        string duongDanKhach14 = "C:\\Users\\anh\\Google Drive\\Learning\\ĐH Khoa học Tự nhiên\\05.Phương pháp lập trình hướng đối tượng\\khach thue.txt";
                         ks.docDanhSachPhong(duongDanPhong14);
                         ks.docDanhSachKhachThue(duongDanKhach14);
                         Console.WriteLine("Da load");
