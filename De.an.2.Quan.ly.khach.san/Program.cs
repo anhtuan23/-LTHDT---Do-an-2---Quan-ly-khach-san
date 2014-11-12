@@ -56,7 +56,7 @@ namespace Do_an___Quan_ly_khach_san
                         if (kt3 == true)
                             Console.WriteLine("Cap nhat thanh cong");
                         else
-                            Console.WriteLine("Khong tim thay sach");
+                            Console.WriteLine("Khong tim thay phong");
                         break;
                     case 4://tim kiem phong
                         Console.Write("Nhap ten phong can tim: ");
